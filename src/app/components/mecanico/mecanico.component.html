@@ -1,0 +1,23 @@
+<p>mecanico works!</p>
+<div class="mecanico-dashboard">
+    <h2>Revisiones</h2>
+    
+    <form (submit)="crearRevision()">
+      <input type="text" [(ngModel)]="placa" placeholder="Placa" class="form-control" required />
+      <input type="text" [(ngModel)]="descripcion" placeholder="Descripción" class="form-control" required />
+      <button type="submit" class="btn btn-primary">Crear Revisión</button>
+    </form>
+  
+    <div>
+      <input type="text" [(ngModel)]="placa" placeholder="Buscar por Placa" class="form-control" />
+      <button (click)="buscarPorPlaca()" class="btn btn-secondary">Buscar</button>
+    </div>
+  
+    <h3>Revisiones realizadas:</h3>
+    <ul>
+      <li *ngFor="let revision of revisiones">
+        {{ revision.placa }} - {{ revision.descripcion }}
+      </li>
+    </ul>
+  </div>
+  

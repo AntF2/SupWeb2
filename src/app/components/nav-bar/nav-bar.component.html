@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Mecánica</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <!-- Iniciar sesión, visible solo si no hay token -->
+        <li *ngIf="!token" class="nav-item">
+          <a class="nav-link" routerLink="/login">Iniciar sesión</a>
+        </li>
+  
+        <!-- Panel de Administrador, visible solo si es admin y hay un token -->
+        <li *ngIf="token && rol2 === 'admin'" class="nav-item">
+          <a class="nav-link" routerLink="/admin">Panel de Administrador</a>
+        </li>
+  
+        <!-- Panel de Mecánico, visible solo si es mecánico y hay un token -->
+        <li *ngIf="token && rol2 === 'mecanico'" class="nav-item">
+          <a class="nav-link" routerLink="/mecanico">Panel de Mecánico</a>
+        </li>
+  
+        <!-- Cerrar sesión, visible solo si hay un token -->
+        <li *ngIf="token" class="nav-item">
+          <a class="nav-link" (click)="logout()">Cerrar sesión</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  

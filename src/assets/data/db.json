@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "email": "naomi@gmail.com",
+      "password": "1234",
+      "roles": "admin",
+      "id": "5"
+    },
+    {
+      "email": "kerly@gmail.com",
+      "password": "1234",
+      "roles": "admin",
+      "id": "6"
+    },
+    {
+      "id": "2c9c",
+      "email": "naomi@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "426d",
+      "email": "naomi@gmail.com",
+      "password": "1234"
+    },
+    {
+      "email": "1@gmail.com",
+      "password": "$2a$10$swd9emiCLJBFiYFJRwvmC.57di.qNNRxof7sPeHzBomFdBB22qJPC",
+      "roles": "admin",
+      "id": "1"
+    },
+    {
+      "email": "juan@mail.com",
+      "password": "00000",
+      "id": "2r4KN38"
+    },
+    {
+      "email": "juan@mail.com",
+      "password": "00000",
+      "id": "n9boSIF"
+    },
+    {
+      "email": "ant@gmail.com",
+      "password": "20032004",
+      "roles": "admin",
+      "id": "2"
+    }
+  ]
+}

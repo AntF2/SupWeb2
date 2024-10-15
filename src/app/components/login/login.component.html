@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>LOGIN</h1>
+  
+    <form (ngSubmit)="login(formulario)" #formulario = "ngForm">
+        <label for="username" class="form-label">Email:</label>
+        <div class="login-container">
+            <form (ngSubmit)="login(formulario)" #formulario="ngForm">
+              <div>
+                <label for="email">Email:</label>
+                <input type="email" [(ngModel)]="email" name="email" required>
+              </div>
+          
+              <div>
+                <label for="password">Password:</label>
+                <input type="password" [(ngModel)]="password" name="password" required>
+              </div>
+          
+              <button type="submit" [disabled]="formulario.invalid">Iniciar sesión</button>
+            </form>
+          </div>
+          
+      </form>
+  </div>

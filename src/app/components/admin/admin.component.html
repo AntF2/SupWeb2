@@ -1,0 +1,12 @@
+<div class="admin-dashboard">
+    <h2>Panel de Administrador</h2>
+    
+    <div *ngFor="let usuario of usuarios">
+      <div>
+        <span>{{ usuario.name }} - {{ usuario.email }} - {{ usuario.roles }}</span>
+        <button class="btn btn-warning" (click)="editarUsuario(usuario)">Editar</button>
+        <button class="btn btn-danger" (click)="eliminarUsuario(usuario.id)">Eliminar</button>
+      </div>
+    </div>
+  </div>
+  
